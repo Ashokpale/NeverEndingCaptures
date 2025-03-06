@@ -1,0 +1,31 @@
+.footer {
+    background-color: #4a6653; /* Dark Sage */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: white;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #b2bebb; /* Sage Gray */
+}
