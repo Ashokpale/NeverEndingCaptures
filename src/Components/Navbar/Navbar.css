@@ -1,23 +1,81 @@
-nav{
+/* Navbar Container */
+.nav-container {
     width: 100%;
-    padding: 4px 0;
+    padding: 10px 20px;
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
-    align-content: center;
     align-items: center;
     justify-content: space-between;
-    z-index:10;
+    z-index: 1000;
     background-color: rgb(250, 217, 189);
-    
 }
 
-nav ul li {
-   display: inline-block;
-   list-style: none;
-   margin: 5px 20px;
-   font-size: 16px;
+/* Logo */
+.logo {
+    width: 60px; /* Adjust as needed */
+    height: auto;
+}
 
-} 
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
 
+/* Individual List Items */
+.nav-links li {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Contact Us Button */
+.btn {
+    padding: 8px 12px;
+    background-color: #ff6700;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hide Hamburger Menu on Large Screens */
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ✅ Responsive Design for Mobile Screens */
+@media screen and (max-width: 768px) {
+    /* Show Hamburger Menu */
+    .menu-btn {
+        display: block;
+    }
+
+    /* Hide menu by default */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background: rgb(250, 217, 189);
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Show menu when open */
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
