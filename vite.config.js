@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/NeverEndingCaptures/', // Replace with your GitHub repository name
+  base: '/NeverEndingCaptures/', // EXACTLY MATCH your GitHub repo name
 });
